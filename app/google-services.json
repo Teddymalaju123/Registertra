@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "394271489633",
+    "project_id": "registertra",
+    "storage_bucket": "registertra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394271489633:android:03dd99ffc7fa4a7910f420",
+        "android_client_info": {
+          "package_name": "com.example.registertra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394271489633-s9q2sij0imf37o9hvqc9km0cg3tiuauq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7FHS1ZTS6PR31dtn-q4kOAv3OQ1R6KbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394271489633-s9q2sij0imf37o9hvqc9km0cg3tiuauq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

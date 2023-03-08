@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cal_BMI_Activity">
+
+    <ImageButton
+        android:id="@+id/btnbackbmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_ic"
+        android:layout_marginTop="10dp">
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/txtBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Calculate your BMI"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_below="@+id/btnbackbmi"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/edtWeight"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:hint="  Your Weight (KG)"
+        android:drawableStart="@drawable/ic_action_weight"
+        android:padding="10dp"
+        android:background="@drawable/edt_bg"
+        android:layout_below="@+id/txtBMI"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp" />
+
+
+    <EditText
+        android:id="@+id/edtHeight"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/ic_action_height"
+        android:padding="10dp"
+        android:background="@drawable/edt_bg"
+        android:layout_below="@+id/edtWeight"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:hint="  Your height (CM)"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_btn2"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtHeight"
+        android:layout_marginTop="40dp"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/bmishow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="ัYour BMI is : "
+        android:textSize="20dp"
+        android:layout_below="@+id/edtHeight"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/showbmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bmishow"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="You have"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/showbmi"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnReCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#EAA268"
+        android:text="Calculate again."
+        android:background="@drawable/custom_btn"
+        android:textColor="@color/green"
+        android:layout_below="@+id/txtstatus"
+        android:visibility="gone" />
+
+</RelativeLayout>

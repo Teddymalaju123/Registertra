@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login_Activity">
+
+    <TextView
+        android:id="@+id/txt01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey there,"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txt02"
+        android:layout_below="@+id/txt01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edtEmailAddress"
+        android:layout_below="@+id/txt02"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:autofillHints="emailAddress"
+        android:ems="10"
+        android:hint="  email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:drawableLeft="@drawable/email_ic"
+        android:background="@drawable/edt_bg"
+        android:paddingLeft="10dp"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_below="@+id/edtEmailAddress"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:hint="  password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:drawableStart="@drawable/password_ic"
+        android:background="@drawable/edt_bg"
+        android:paddingLeft="10dp"
+        android:textColorHint="#757575" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/etPassword"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:text="login"
+        android:background="@drawable/custom_btn3"
+        android:textColor="@color/white"/>/>
+    <TextView
+        android:id="@+id/txt03"
+        android:layout_below="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account yet?"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="80dp"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt03"
+        android:layout_below="@+id/btnLogin"
+        android:text="Register"
+        android:textColor="#466632"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+
+
+</RelativeLayout>

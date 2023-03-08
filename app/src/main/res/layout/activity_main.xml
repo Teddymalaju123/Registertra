@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/lightgrey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:text="Register Trainer" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Please fill out the information correctly."/>
+
+        <EditText
+            android:id="@+id/textViewuserName"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:drawableStart="@drawable/person_ic"
+            android:padding="10dp"
+            android:background="@drawable/edt_bg"
+            android:hint="  Username" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/edt_bg"
+            android:padding="10dp"
+            android:drawableStart="@drawable/password_ic"
+            android:ems="10"
+            android:hint="  Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/textViewIDCard"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:background="@drawable/edt_bg"
+            android:drawableStart="@drawable/idcard_ic"
+            android:hint="  ID Card" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress5"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:background="@drawable/edt_bg"
+            android:drawableStart="@drawable/email_ic"
+            android:ems="10"
+            android:hint="  Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/textViewFName"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:drawableStart="@drawable/person_ic"
+            android:background="@drawable/edt_bg"
+            android:hint="  First Name" />
+
+        <EditText
+            android:id="@+id/textViewLastname"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:background="@drawable/edt_bg"
+            android:drawableStart="@drawable/person_ic"
+            android:hint="  Last Name" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:background="@drawable/edt_bg"
+            android:drawableStart="@drawable/phone_ic"
+            android:ems="10"
+            android:hint="  Phone Number"
+            android:inputType="phone" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/buttonupload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:onClick="insert_Image"
+            android:text="UploadImage ( limit size 2.5MB)"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_btn"
+            android:padding="12dp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/buttonSignup"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_btn3"
+            android:textColor="@color/white"
+            android:text="Sign up" />
+
+    </LinearLayout>
+
+</ScrollView>

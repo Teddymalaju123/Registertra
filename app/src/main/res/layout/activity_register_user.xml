@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterUser">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/txt01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hey there,"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txt02"
+            android:layout_below="@+id/txt01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create an Account"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+        <EditText
+            android:id="@+id/rgsuser"
+            android:layout_below="@+id/txt02"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="  Username"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:drawableLeft="@drawable/profile_icon"
+            android:background="@drawable/edt_bg"
+            android:paddingLeft="10dp"
+            android:textColorHint="#757575" />
+
+        <EditText
+            android:id="@+id/rgspass"
+            android:layout_below="@+id/rgsuser"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="  Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:drawableLeft="@drawable/password_ic"
+            android:background="@drawable/edt_bg"
+            android:paddingLeft="10dp"
+            android:textColorHint="#757575" />
+
+
+        <EditText
+            android:id="@+id/rgsemailuser"
+            android:layout_below="@+id/rgspass"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="  Email "
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:drawableLeft="@drawable/email_ic"
+            android:background="@drawable/edt_bg"
+            android:paddingLeft="10dp"
+            android:textColorHint="#757575" />
+
+        <EditText
+            android:id="@+id/rgsfname"
+            android:layout_below="@+id/rgsemailuser"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:hint="  First Name"
+            android:minHeight="48dp"
+            android:drawableLeft="@drawable/person_ic"
+            android:background="@drawable/edt_bg"
+            android:paddingLeft="10dp"
+            android:textColorHint="#757575" />
+
+        <EditText
+            android:id="@+id/rgslname"
+            android:layout_below="@+id/rgsfname"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:autofillHints="emailAddress"
+            android:hint="  Last Name"
+            android:minHeight="48dp"
+            android:drawableLeft="@drawable/person_ic"
+            android:background="@drawable/edt_bg"
+            android:paddingLeft="10dp"
+            android:textColorHint="#757575" />
+
+        <EditText
+            android:id="@+id/rgsphone"
+            android:layout_below="@+id/rgslname"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="  Phone Number"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:drawableLeft="@drawable/phone_ic"
+            android:background="@drawable/edt_bg"
+            android:paddingLeft="10dp"
+            android:textColorHint="#757575" />
+
+        <Spinner
+            android:id="@+id/gender_spinner"
+            android:layout_width="360dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/rgsphone"
+            android:layout_centerHorizontal="true"
+            android:autofillHints="gender"
+            android:contentDescription="Gender"
+            android:labelFor="@+id/gender_spinner"
+            android:spinnerMode="dropdown">
+        </Spinner>
+
+        <EditText
+            android:id="@+id/edtdate"
+            android:layout_width="360dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="date"
+            android:hint="  Date of birth (dd/mm/yy)"
+            android:drawableStart="@drawable/ic_action_calendar"
+            android:digits="0123456789/"
+            android:background="@drawable/edt_bg"
+            android:layout_below="@+id/gender_spinner"/>
+
+        <EditText
+            android:id="@+id/edtweight"
+            android:layout_width="360dp"
+            android:layout_height="48dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/edtdate"
+            android:layout_centerHorizontal="true"
+            android:hint="  Your Weight (KG)"
+            android:drawableStart="@drawable/ic_action_weight"
+            android:background="@drawable/edt_bg"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/edtheight"
+            android:layout_width="360dp"
+            android:layout_height="48dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:layout_centerHorizontal="true"
+            android:hint="  Your height (CM)"
+            android:layout_below="@+id/edtweight"
+            android:background="@drawable/edt_bg"
+            android:drawableStart="@drawable/ic_action_height"/>
+
+        <TextView
+            android:id="@+id/txtsubgoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It will us to choose a best program for you"
+            android:layout_below="@+id/edtheight"
+            android:layout_centerHorizontal="true">
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/goaloption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtsubgoal"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/build"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Build more muscle"
+                />
+
+            <RadioButton
+                android:id="@+id/loss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loss weight"
+                />
+
+            <RadioButton
+                android:id="@+id/stay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stay healthy"
+                />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edttargetweight"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/goaloption"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/ic_action_weight"
+            android:textSize="16dp"
+            android:background="@drawable/edt_bg"
+            android:padding="10dp"
+            android:drawablePadding="5dp"
+            android:hint="your target weight (KG)"
+            >
+        </EditText>
+
+        <TextView
+            android:id="@+id/txtwayoption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edttargetweight"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:text="Choosing way to control your weight">
+
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/wayoption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtwayoption"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp">
+
+            <RadioButton
+                android:id="@+id/wayif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intermittent Fasting (IF) "
+                />
+
+            <RadioButton
+                android:id="@+id/callories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage calories per day"
+                />
+
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/btnrgs"
+            android:layout_below="@+id/txtwayoption"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/custom_btn3"
+            android:textColor="@color/white"
+            android:text="Sign up" />
+
+        <TextView
+            android:id="@+id/txt03"
+            android:layout_below="@+id/btnrgs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="80dp"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt03"
+            android:layout_below="@+id/btnrgs"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#466632"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
